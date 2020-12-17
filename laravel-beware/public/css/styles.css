@@ -151,3 +151,25 @@
     max-width: 50px;
     height: auto;
 }
+
+.fix-footer{
+    display: block;
+    position: fixed;
+    left: 50%;
+    right: 10%;
+    bottom: 0;
+    width: 35%;
+    height:10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottom-right{
+    position: fixed;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right:25px;
+    padding-top: 25px;
+    bottom: 16px;
+    right: 16px;
+}

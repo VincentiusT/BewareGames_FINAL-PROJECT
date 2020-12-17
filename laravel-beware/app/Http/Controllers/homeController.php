@@ -68,4 +68,15 @@ class homeController extends Controller
     public function about(){
         return view('about.about');
     }
+
+    public function submit(Request $request){
+        $game = new \App\Models\submittedGames();
+        $game->name = $request->input('name');
+        $game->genre = $request->input('genre');
+        $game->description = $request->input('description');
+        $game->link = $request->input('link');
+
+        $game->save();
+        return redirect('/');
+    }
 }

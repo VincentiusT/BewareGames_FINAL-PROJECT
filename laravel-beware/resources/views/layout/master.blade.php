@@ -11,12 +11,12 @@
     <body class="bg-black">
         <nav class="navbar navbar-expand-sm navbar-dark bg-black full-width">
             <img src="{{ asset('images/Logo1.png') }}" alt="bewarelogo" id="navbarLogo">
-            <a href="#" class="navbar-brand">Beware Games</a>
+            <a href="/" class="navbar-brand">Beware Games</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto">      
+                <ul class="navbar-nav ml-auto">  
                     <li class="nav-item">
                         <a href="/" class="nav-link">Home</a>
                     </li>
@@ -26,9 +26,6 @@
                     <li class="nav-item">
                         <a href="/about" class="nav-link">About</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="/login" class="nav-link">Login</a>
-                    </li> -->
                     <li class="nav-item">
                         <a href="/logout" class="nav-link">Logout</a>
                     </li>

@@ -10,7 +10,7 @@
                 <p class="text-center text-light">Submit your games and there is a chance your games will be selected to be published on our platform!</p>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-danger btn-round btn-lg">Submit your game now!</button>
+                <button type="button" class="btn btn-danger btn-round btn-lg" data-toggle="modal" data-target="#submitGameForm">Submit your game now!</button>
             </div>
             <br><br><br><br><br><br><br><br><br><br>
         </div>
@@ -91,5 +91,45 @@
                 <br><br><br><br><br>
             </div> 
 
+        </div>
+
+        <!-- modal -->
+        <div class="modal" id="submitGameForm" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Submit your Game!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/submit" method="POST" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter game name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Genre</label>
+                            <input name="genre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter game genre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Description</label>
+                            <input name="description" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter game description  ">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Download Link</label>
+                            <input name="link" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter game link  ">
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
         </div>
 @endsection

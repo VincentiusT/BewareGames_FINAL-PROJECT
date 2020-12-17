@@ -22,10 +22,16 @@
                 </div>   
                 <div>
                     <br><br><br><br>
-                    <button class="circle"><img src="images/email.png" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/insta.png" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/phone.png" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/playstoreBW.png" id="emailLogo" alt="email"></button>
+                    <!-- <a href="https://www.instagram.com/gamesbybeware/">
+                        <div class="circle">
+                            <img src="images/insta.png" alt="insta" id="emailLogo">
+                        </div>
+                    </a> -->
+
+                    <button class="circle"><img src="images/email.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="circle"><img src="images/insta.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="circle"><img src="images/phone.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="circle"><img src="images/playstoreBW.png" onclick="location.href='https://play.google.com/store/apps/developer?id=Beware!&hl=en_US&gl=US'" id="emailLogo" alt="email"></button>
                 </div>
                 
             </div>

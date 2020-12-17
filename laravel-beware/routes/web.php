@@ -25,6 +25,8 @@ Route::get('/logout','authController@logout');
 Route::get('/register','authController@register');
 Route::post('/postregister','authController@postregister');
 
+Route::post('/submit','homeController@submit')->middleware('auth');
+
 Route::get('/game', 'homeController@index')->middleware('auth');
 Route::post('/game/create', 'homeController@create')->middleware('auth');
 Route::get('/game/{id}/edit', 'homeController@edit')->middleware('auth');
