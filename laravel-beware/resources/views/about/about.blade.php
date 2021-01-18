@@ -28,10 +28,10 @@
                         </div>
                     </a> -->
 
-                    <button class="circle"><img src="images/email.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/insta.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/phone.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
-                    <button class="circle"><img src="images/playstoreBW.png" onclick="location.href='https://play.google.com/store/apps/developer?id=Beware!&hl=en_US&gl=US'" id="emailLogo" alt="email"></button>
+                    <button class="btn circle"><img src="images/email.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="btn circle"><img src="images/insta.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="btn circle"><img src="images/phone.png" onclick="location.href='https://www.instagram.com/gamesbybeware/'" id="emailLogo" alt="email"></button>
+                    <button class="btn circle"><img src="images/playstoreBW.png" onclick="location.href='https://play.google.com/store/apps/developer?id=Beware!&hl=en_US&gl=US'" id="emailLogo" alt="email"></button>
                 </div>
                 
             </div>

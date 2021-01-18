@@ -16,6 +16,16 @@ class homeController extends Controller
         return view('game.index',['dataBewareGame'=>$dataBewareGame]);
     }
 
+    public function submittedGames(Request $request){
+        if($request->has('find')){
+            $dataSubmittedGame = \App\Models\submittedGames::where('name','LIKE','%'.$request->find.'%')->get();
+        }
+        else{
+            $dataSubmittedGame = \App\Models\submittedGames::all();
+        }
+        return view('game/submittedGame',['dataSubmittedGame'=>$dataSubmittedGame]);
+    }
+
     public function create(Request $request){
         $game = new \App\Models\games();
         $game->name = $request->input('name');

@@ -27,10 +27,12 @@ Route::post('/postregister','authController@postregister');
 
 Route::post('/submit','homeController@submit')->middleware('auth');
 
+
 Route::get('/game', 'homeController@index')->middleware('auth');
 Route::post('/game/create', 'homeController@create')->middleware('auth');
 Route::get('/game/{id}/edit', 'homeController@edit')->middleware('auth');
 Route::post('/game/{id}/update', 'homeController@update')->middleware('auth');
 Route::get('/game/{id}/delete', 'homeController@delete')->middleware('auth');
+Route::get('/game/submittedGames', 'homeController@submittedGames')->middleware('auth');
 
 Route::get('/about', 'homeController@about')->middleware('auth');

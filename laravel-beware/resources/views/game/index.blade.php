@@ -49,7 +49,7 @@
         <br><br><br>
     </div>
 
-    <button class="bottom-right btn-round bg-black text-light">See My Submitted Game!</button>
+    <button class="btn bottom-right btn-round bg-black text-light" onclick="location.href='/game/submittedGames'">See Submitted Game!</button>
 
     <!-- <div class="fix-footer text-center">
         <button type="button" class="btn bg-black btn-round btn-lg text-light" data-toggle="modal" data-target="#submitGameForm">See your game submissions</button>
